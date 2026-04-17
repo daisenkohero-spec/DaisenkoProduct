@@ -1,0 +1,423 @@
+:root {
+    --primary: #004aad;
+    --secondary: #0072ce;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --bg: #f9fafb;
+}
+
+.stats,
+.about,
+.timeline,
+.vm,
+.why,
+.cta {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* ================= HERO ================= */
+.about-hero {
+    /* background: #f5f7fb; */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-top h1 {
+    font-size: 40px;
+    font-style: italic;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.hero-top p {
+    font-size: 23px;
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 40px;
+}
+
+.video-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 80px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+.video-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+}
+
+/* ================= ABOUT ================= */
+/* .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 50px 50px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--primary);
+    text-align: center;
+}
+
+.about p {
+    font-size: medium;
+    color: rgb(133, 133, 133);
+    max-width: 600px;
+    margin: 0 auto 16px;
+    line-height: 1.6;
+} */
+
+/* ================= TIMELINE ================= */
+.timeline {
+    background: #2f5597;
+    padding: 60px 60px;
+    margin-top: 50px;
+}
+
+.timeline-header {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    color: #eef3ff;
+}
+
+.timeline-header h2 {
+    font-size: 40px;
+    color: #eef3ff
+}
+
+.timeline-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 50px 50px;
+    scroll-snap-type: x mandatory;
+}
+
+.timeline-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.timeline-card {
+    min-width: 260px;
+    max-width: 260px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    scroll-snap-align: start;
+    background: #f3f6ff;
+    padding: 24px;
+    border-radius: 18px;
+    transition: .3s;
+}
+
+.timeline-card p {
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.5;
+}
+
+.timeline-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+}
+
+.timeline-card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+/* ================= VISION MISSION ================= */
+.vm {
+    background: #eef3ff;
+    padding: 40px 40px;
+}
+
+.vm-grid {
+    padding: 80px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.vm-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.vm-card i {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.vm-card p {
+    max-width: 420px;
+    margin: 0 auto;
+    line-height: 1.6;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* ===================================================== */
+/* ================= 320px (BASE) ======================= */
+
+/* GLOBAL PADDING FIX */
+.stats,
+.about,
+.timeline,
+.vm,
+.why,
+.cta {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* HERO */
+.about-hero {
+    padding: 40px 16px;
+}
+
+.hero-top h1 {
+    font-size: 28px;
+}
+
+.hero-top p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* VIDEO */
+.video-wrapper iframe {
+    height: 220px;
+}
+
+/* ABOUT */
+/* .about-grid {
+    padding: 20px 0 40px;
+}
+
+.about h2 {
+    font-size: 24px;
+}
+
+.about p {
+    font-size: 14px;
+} */
+
+/* TIMELINE */
+.timeline {
+    padding: 40px 16px;
+}
+
+.timeline-header h2 {
+    font-size: 26px;
+}
+
+.timeline-grid {
+    padding: 30px 0;
+    gap: 14px;
+}
+
+.timeline-card {
+    min-width: 220px;
+    max-width: 220px;
+    padding: 18px;
+}
+
+/* VM */
+.vm {
+    padding: 40px 16px;
+}
+
+.vm-grid {
+    padding: 20px 0;
+    grid-template-columns: 1fr;
+}
+
+.vm-card {
+    padding: 24px;
+}
+
+/* ================= 360px ============================== */
+@media (min-width: 360px) {
+
+    .hero-top h1 {
+        font-size: 30px;
+    }
+
+    .video-wrapper iframe {
+        height: 260px;
+    }
+
+    .timeline-card {
+        min-width: 240px;
+        max-width: 240px;
+    }
+}
+
+/* ================= 768px (Tablet) ===================== */
+@media (min-width: 768px) {
+
+    .about-hero {
+        padding: 20px 20px;
+    }
+
+    .hero-top h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .hero-top p {
+        font-size: 16px;
+    }
+
+    .video-wrapper iframe {
+        height: 420px;
+    }
+
+    /* ABOUT */
+    /* .about-grid {
+        padding: 20px 30px 50px;
+    }
+
+    .about h2 {
+        font-size: 40px;
+        font-style: inherit;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .about p {
+        font-size: 18px;
+        color: #6b7280;
+        max-width: 720px;
+        line-height: 1.5;
+    } */
+
+    /* TIMELINE */
+    .timeline {
+        padding: 40px 20px;
+    }
+
+    .timeline-header h2 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .timeline-grid {
+        gap: 18px;
+        padding: 40px 20px;
+    }
+
+    .timeline-card {
+        min-width: 260px;
+        max-width: 260px;
+    }
+
+    .timeline-card h3{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    /* VM */
+    .vm-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px;
+    }
+
+    .vm-card h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+}
+
+/* ================= 1024px (Laptop) ==================== */
+@media (min-width: 1024px) {
+
+    .hero-top h1 {
+        font-size: 40px;
+    }
+
+    .hero-top p {
+        font-size: 18px;
+    }
+
+    .video-wrapper iframe {
+        height: 520px;
+    }
+
+    /* ABOUT CENTER */
+    /* .about-grid {
+        max-width: 900px;
+        margin: auto;
+        padding: 60px 0 80px;
+    } */
+
+    /* TIMELINE */
+    .timeline {
+        padding: 80px 40px;
+    }
+
+    .timeline-header h2 {
+        font-size: 36px;
+    }
+
+    .timeline-grid {
+        padding: 50px 40px;
+    }
+
+    /* VM */
+    .vm-grid {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+/* ================= 1400px (Desktop) =================== */
+@media (min-width: 1400px) {
+
+    /* .about-grid {
+        max-width: 1100px;
+    } */
+
+    .timeline-grid {
+        justify-content: center;
+    }
+
+    .vm-grid {
+        max-width: 1200px;
+        gap: 40px;
+    }
+
+    .video-wrapper iframe {
+        height: 600px;
+    }
+}

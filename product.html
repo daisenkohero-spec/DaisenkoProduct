@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Daisenko | Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="nav">
+
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/pic/20240902 Logo.png">
+                </a>
+            </div>
+
+            <nav class="menu" id="menu" lang="th">
+                <a href="home.html">หน้าหลัก</a>
+                <a href="product.html" class="active">โปรดักส์</a>
+                <a href="about.html">เกี่ยวกับเรา</a>
+                <a href="ref.html">โปรเจกต์</a>
+                <a href="contact.html">ติดต่อเรา</a>
+            </nav>
+
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-overlay" id="overlay"></div>
+
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <img src="/pic/container_product.jpg" alt="Products Banner">
+
+        <!-- <div class="hero-text">
+            <h1>Our Products</h1>
+            <p>Professional air conditioning solutions for residential and commercial use</p>
+        </div> -->
+    </section>
+
+    <section class="content">
+
+        <div class="filter-bar">
+
+            <div class="category-dropdown">
+                <div class="dropdown" id="dropdown">
+                    <div class="dropdown-selected" onclick="toggleDropdown()">
+                        <span id="selectedText">All</span>
+                        <span class="arrow">⌄</span>
+                    </div>
+
+                    <div class="dropdown-menu" id="dropdownMenu" lang="th">
+                        <label><input type="checkbox" value="floor standing"> แอร์ตู้ตั้ง</label>
+                        <label><input type="checkbox" value="floor and ceiling"> แอร์ตั้งแขวน</label>
+                        <label><input type="checkbox" value="wall"> แอร์ติดผนัง</label>
+                        <label><input type="checkbox" value="4 Ways"> แอร์ 4 ทิศทาง</label>
+                        <label><input type="checkbox" value="Solar"> Solar</label>
+                        <label><input type="checkbox" value="OneWay"> แอร์วันเวย์</label>
+                        <label><input type="checkbox" value="Concealed"> แอร์ดัก</label>
+                        <label><input type="checkbox" value="Purifresh"> เครื่องเติมอากาศ</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <input type="text" class="search-box" id="search" placeholder="Search product..."> -->
+
+        </div>
+
+        <div class="products">
+
+            <!-- FLOOR STANDING-->
+            <div class="product-card" data-type="floor standing">
+                <!-- <div class="badge">HOT</div> -->
+
+                <div class="product-img">
+                    <img src="/pic/2024-10-18-floor standing-02.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ตู้ตั้ง (Floor Standing)','ให้ความเย็นสูง','เหมาะกับพื้นที่ขนาดใหญ่ที่ไม่สามารถติดตั้งบนผนังหรือเพดานได้ เคลื่อนย้ายสะดวก รองรับการใช้งานหนัก','/pic/2024-10-18-floor standing-02.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ตู้ตั้ง (Floor Standing)</div>
+                <div class="product-sub" lang="th">ให้ความเย็นสูง</div>
+
+                <div class="product-desc" lang="th">
+                    เหมาะกับพื้นที่ขนาดใหญ่ที่ไม่สามารถติดตั้งบนผนังหรือเพดานได้ เคลื่อนย้ายสะดวก รองรับการใช้งานหนัก
+                </div>
+
+                <a href="/catalog/FLEXI Comfort Floor Standing.pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+
+            <!-- FLOOR AND CEILING -->
+            <div class="product-card" data-type="floor and ceiling">
+
+                <div class="product-img">
+                    <img src="/pic/aircon4.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ตั้งแขวน (Ceiling Suspended)','Super Swing','เหมาะกับพื้นที่กว้างอย่างร้านค้า โชว์รูม และโกดัง ไม่เปลืองพื้นที่ผนัง','/pic/aircon4.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ตั้งแขวน (Ceiling Suspended)</div>
+                <div class="product-sub">Super Swing</div>
+
+                <div class="product-desc" lang="th">
+                    เหมาะกับพื้นที่กว้างอย่างร้านค้า โชว์รูม และโกดัง ไม่เปลืองพื้นที่ผนัง
+                </div>
+
+                <a href="/catalog/FLEXI ComFORT Floor & CEILING TYPE แก้ไข.pdf" class="product-btn" target="_blank"
+                    download>
+                    Download Catalog
+                </a>
+            </div>
+            <!-- ================================================================= -->
+            <div class="product-card" data-type="floor and ceiling">
+
+                <div class="product-img">
+                    <img src="/pic/aircon4.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ตั้งแขวน (Ceiling Suspended)','Super Swing Ultra Inverter','เหมาะกับพื้นที่กว้างอย่างร้านค้า โชว์รูม และโกดัง ไม่เปลืองพื้นที่ผนัง','/pic/aircon4.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ตั้งแขวน (Ceiling Suspended)</div>
+                <div class="product-sub">Super Swing Ultra Inverter</div>
+
+                <div class="product-desc" lang="th">
+                    เหมาะกับพื้นที่กว้างอย่างร้านค้า โชว์รูม และโกดัง ไม่เปลืองพื้นที่ผนัง
+                </div>
+
+                <a href="/catalog/SUPER SWING แอร์แขวนเบอร์5 Inverter (IV).pdf" class="product-btn" target="_blank"
+                    download>
+                    Download Catalog
+                </a>
+            </div>
+            <!-- ================================================================= -->
+            <div class="product-card" data-type="floor and ceiling">
+
+                <div class="product-img">
+                    <img src="/pic/aircon4.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ตั้งแขวน (Ceiling Suspended)','Super Swing Ultra Well','เหมาะกับพื้นที่กว้างอย่างร้านค้า โชว์รูม และโกดัง ไม่เปลืองพื้นที่ผนัง','/pic/aircon4.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ตั้งแขวน (Ceiling Suspended)</div>
+                <div class="product-sub">Super Swing Ultra Well</div>
+
+                <div class="product-desc" lang="th">
+                    เหมาะกับพื้นที่กว้างอย่างร้านค้า โชว์รูม และโกดัง ไม่เปลืองพื้นที่ผนัง
+                </div>
+
+                <a href="/catalog/SUPER SWING แอร์แขวนเบอร์ 5.pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+            <!-- ================================================================= -->
+            <div class="product-card" data-type="floor and ceiling">
+
+                <div class="product-img">
+                    <img src="/pic/aircon4.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ตั้งแขวน (Ceiling Suspended)','Super Swing Ultra Solar','เหมาะกับพื้นที่กว้างอย่างร้านค้า โชว์รูม และโกดัง ไม่เปลืองพื้นที่ผนัง','/pic/aircon4.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ตั้งแขวน (Ceiling Suspended)</div>
+                <div class="product-sub">Super Swing Ultra Solar</div>
+
+                <div class="product-desc" lang="th">
+                    เหมาะกับพื้นที่กว้างอย่างร้านค้า โชว์รูม และโกดัง ไม่เปลืองพื้นที่ผนัง
+                </div>
+
+                <a href="/catalog/Ultra Solar แอร์แขวนโซล่าเซลล์.pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+            <!-- ================================================================= -->
+            <div class="product-card" data-type="floor and ceiling">
+
+                <div class="product-img">
+                    <img src="/pic/aircon4.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ตั้งแขวน (Ceiling Suspended)','Super Swing Ultra Inverter 5 Stars','เหมาะกับพื้นที่กว้างอย่างร้านค้า โชว์รูม และโกดัง ไม่เปลืองพื้นที่ผนัง','/pic/aircon4.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ตั้งแขวน (Ceiling Suspended)</div>
+                <div class="product-sub">Super Swing Ultra Inverter 5 Stars</div>
+
+                <div class="product-desc" lang="th">
+                    เหมาะกับพื้นที่กว้างอย่างร้านค้า โชว์รูม และโกดัง ไม่เปลืองพื้นที่ผนัง
+                </div>
+
+                <a href="/catalog/Super SWING แอร์แขวน Inverter 5 ดาว.pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+
+            <!-- WALL -->
+            <div class="product-card" data-type="wall">
+                <!-- <div class="badge">NEW</div> -->
+
+                <div class="product-img">
+                    <img src="/pic/WT_HiWall.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ติดผนัง (Wall Mounted)','HiWall','ติดตั้งง่าย ประหยัดพื้นที่ เหมาะกับห้องนอนและห้องนั่งเล่น ทำความเย็นได้รวดเร็ว ดีไซน์บางเฉียบเข้ากับทุกการตกแต่ง','/pic/WT_HiWall.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ติดผนัง (Wall Mounted)</div>
+                <div class="product-sub">HiWall</div>
+
+                <div class="product-desc" lang="th">
+                    ทำความเย็นได้รวดเร็ว ดีไซน์บางเฉียบเข้ากับทุกการตกแต่ง
+                </div>
+
+                <a href="/catalog/Walltype Hiwall(Flexi Comfort).pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+            <!-- ================================================================= -->
+            <div class="product-card" data-type="wall">
+                <!-- <div class="badge">NEW</div> -->
+
+                <div class="product-img">
+                    <img src="/pic/WT_HiWall.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ติดผนัง (Wall Mounted)','Green Diamond Inverter','ติดตั้งง่าย ประหยัดพื้นที่ เหมาะกับห้องนอนและห้องนั่งเล่น ทำความเย็นได้รวดเร็ว ดีไซน์บางเฉียบเข้ากับทุกการตกแต่ง','/pic/WT_HiWall.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ติดผนัง (Wall Mounted)</div>
+                <div class="product-sub">Green Diamond Inverter</div>
+
+                <div class="product-desc" lang="th">
+                    ทำความเย็นได้รวดเร็ว ดีไซน์บางเฉียบเข้ากับทุกการตกแต่ง
+                </div>
+
+                <a href="/catalog/Green Diamond แอร์ติดผนัง Inverter.pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+            <!-- ================================================================= -->
+            <div class="product-card" data-type="wall">
+                <!-- <div class="badge">NEW</div> -->
+
+                <div class="product-img">
+                    <img src="/pic/aircon5.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ติดผนัง (Wall Mounted)','Green Diamond Solar','ติดตั้งง่าย ประหยัดพื้นที่ เหมาะกับห้องนอนและห้องนั่งเล่น ทำความเย็นได้รวดเร็ว ดีไซน์บางเฉียบเข้ากับทุกการตกแต่ง','/pic/WT 2025 V2.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ติดผนัง (Wall Mounted)</div>
+                <div class="product-sub">Green Diamond Solar</div>
+
+                <div class="product-desc" lang="th">
+                    ทำความเย็นได้รวดเร็ว ดีไซน์บางเฉียบเข้ากับทุกการตกแต่ง
+                </div>
+
+                <a href="/catalog/Green Diamond Solar Inverter.pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+
+            <!-- 4 WAYS -->
+            <div class="product-card" data-type="4 Ways">
+
+                <div class="product-img">
+                    <img src="/pic/CS.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ 4 ทิศทาง (Cassette/4-Way)','4 Ways Inverter','ติดตั้งในฝ้าเพดาน กระจายลมเย็น 4 ทิศทางพร้อมกัน เหมาะกับออฟฟิศ ร้านอาหาร และพื้นที่พาณิชย์ที่ต้องการความเย็นสม่ำเสมอ','/pic/CS.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ 4 ทิศทาง (Cassette/4-Way)</div>
+                <div class="product-sub">4 Ways Inverter</div>
+
+                <div class="product-desc" lang="th">
+                    เหมาะกับออฟฟิศ ร้านอาหาร และพื้นที่พาณิชย์ที่ต้องการความเย็นสม่ำเสมอ
+                </div>
+
+                <a href="/catalog/FLEXI Comfort 4 ways.pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+            <!-- ================================================================= -->
+            <div class="product-card" data-type="4 Ways">
+
+                <div class="product-img">
+                    <img src="/pic/CS.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ 4 ทิศทาง (Cassette/4-Way)','4-Way','ติดตั้งในฝ้าเพดาน กระจายลมเย็น 4 ทิศทางพร้อมกัน เหมาะกับออฟฟิศ ร้านอาหาร และพื้นที่พาณิชย์ที่ต้องการความเย็นสม่ำเสมอ','/pic/CS.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ 4 ทิศทาง (Cassette/4-Way)</div>
+                <div class="product-sub">4-Way</div>
+
+                <div class="product-desc" lang="th">
+                    เหมาะกับออฟฟิศ ร้านอาหาร และพื้นที่พาณิชย์ที่ต้องการความเย็นสม่ำเสมอ
+                </div>
+
+                <a href="/catalog/FLEXI Comfort แอร์สี่ทิศทาง .pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+
+            <!-- SOLAR -->
+            <div class="product-card" data-type="Solar">
+
+                <div class="product-img">
+                    <img src="/pic/aircon5.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ติดผนัง (Wall Mounted)','Green Diamond Solar','ติดตั้งง่าย ประหยัดพื้นที่ เหมาะกับห้องนอนและห้องนั่งเล่น ทำความเย็นได้รวดเร็ว ดีไซน์บางเฉียบเข้ากับทุกการตกแต่ง','/pic/aircon5.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ติดผนัง (Wall Mounted)</div>
+                <div class="product-sub">Green Diamond Solar</div>
+
+                <div class="product-desc" lang="th">
+                    ทำความเย็นได้รวดเร็ว ดีไซน์บางเฉียบเข้ากับทุกการตกแต่ง
+                </div>
+
+                <a href="/catalog/Green Diamond Solar Inverter.pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+            <!-- ================================================================= -->
+            <div class="product-card" data-type="Solar">
+                <div class="product-img">
+                    <img src="/pic/aircon4.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ตั้งแขวน (Ceiling Suspended)','Super Swing Ultra Solar','เหมาะกับพื้นที่กว้างอย่างร้านค้า โชว์รูม และโกดัง ไม่เปลืองพื้นที่ผนัง','/pic/aircon4.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ตั้งแขวน (Ceiling Suspended)</div>
+                <div class="product-sub">Super Swing Ultra Solar</div>
+
+                <div class="product-desc" lang="th">
+                    เหมาะกับพื้นที่กว้างอย่างร้านค้า โชว์รูม และโกดัง ไม่เปลืองพื้นที่ผนัง
+                </div>
+
+                <a href="/catalog/Ultra Solar แอร์แขวนโซล่าเซลล์.pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+
+            <!-- PURIFRESH -->
+            <div class="product-card" data-type="Purifresh">
+
+                <div class="product-img">
+                    <img src="/pic/aircon6.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('เครื่องเติมอากาศ Purifresh (Fresh Air Ventilator)','Duct Type Inverter','ซ่อนในฝ้าเพดาน กระจายความเย็นผ่านท่อลม ให้ห้องดูสะอาดตาไร้อุปกรณ์ เหมาะกับบ้านหรืออาคารที่ต้องการความสวยงามและเป็นระเบียบ','/pic/aircon6.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">เครื่องเติมอากาศ Purifresh (Fresh Air Ventilator)</div>
+                <div class="product-sub">Duct Type Inverter</div>
+
+                <div class="product-desc" lang="th">
+                    เหมาะกับพื้นที่แคบยาว เช่น ทางเดิน ห้องแถว หรือพื้นที่ที่มีผนังขวาง
+                </div>
+
+                <a href="/catalog/outdoor-condenser.pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+
+            <!-- ONE WAY -->
+            <div class="product-card" data-type="OneWay">
+
+                <div class="product-img">
+                    <img src="/pic/aircon7.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์วันเวย์ (1-Way Cassette)','Duct Type Inverter','ติดตั้งในฝ้าเพดาน ส่งลมเย็นในทิศทางเดียว เหมาะกับพื้นที่แคบยาว เช่น ทางเดิน ห้องแถว หรือพื้นที่ที่มีผนังขวาง','/pic/aircon7.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์วันเวย์ (1-Way Cassette)</div>
+                <div class="product-sub">Duct Type Inverter</div>
+
+                <div class="product-desc" lang="th">
+                    เหมาะกับพื้นที่แคบยาว เช่น ทางเดิน ห้องแถว หรือพื้นที่ที่มีผนังขวาง
+                </div>
+
+                <a href="/catalog/outdoor-condenser.pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+
+            <!-- CONCEALED -->
+            <div class="product-card" data-type="Concealed">
+
+                <div class="product-img">
+                    <img src="/pic/aircon8.png">
+                </div>
+
+                <div class="quick-view" lang="th"
+                    onclick="openQuickView('แอร์ดัก (Ducted / Concealed)','Duct Type Inverter','ซ่อนในฝ้าเพดาน กระจายความเย็นผ่านท่อลม ให้ห้องดูสะอาดตาไร้อุปกรณ์ เหมาะกับบ้านหรืออาคารที่ต้องการความสวยงามและเป็นระเบียบ','/pic/aircon8.png')">
+                    ดูด่วน
+                </div>
+
+                <div class="product-title" lang="th">แอร์ดัก (Ducted / Concealed)</div>
+                <div class="product-sub">Duct Type Inverter</div>
+
+                <div class="product-desc" lang="th">
+                    เหมาะกับบ้านหรืออาคารที่ต้องการความสวยงามและเป็นระเบียบ
+                </div>
+
+                <a href="/catalog/FLEXI Comfort (Duct-type).pdf" class="product-btn" target="_blank" download>
+                    Download Catalog
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="quick-panel" id="quickPanel">
+
+        <span class="close-panel" onclick="closeQuickView()">✕</span>
+
+        <div class="panel-content">
+
+            <div class="panel-gallery">
+                <img id="panelImg">
+            </div>
+
+            <div class="panel-title" id="panelTitle"></div>
+            <div class="panel-sub" id="panelSub"></div>
+            <div class="panel-desc" id="panelDesc"></div>
+
+            <a href="#" class="product-btn">View Full Product</a>
+
+        </div>
+    </div>
+
+    <div class="quick-overlay" id="quickOverlay" onclick="closeQuickView()"></div>
+
+    <footer>
+        © 2026 Daisenko (Thailand) Co., Ltd. All Rights Reserved.
+    </footer>
+
+    <script src="/js/product.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Daisenko | References</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/ref.css">
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="nav">
+
+      <div class="logo">
+        <a href="home.html">
+          <img src="/pic/20240902 Logo.png" alt="Daisenko">
+        </a>
+      </div>
+
+      <nav class="menu" id="menu" lang="th">
+        <a href="home.html">หน้าหลัก</a>
+        <a href="product.html">โปรดักส์</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        <a href="ref.html" class="active">โปรเจกต์</a>
+        <a href="contact.html">ติดต่อเรา</a>
+      </nav>
+
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="menu-overlay" id="overlay"></div>
+
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="page-hero">
+    <img src="/pic/container_ref.png" alt="References Banner">
+  </section>
+
+  <!-- ===== FILTER ===== -->
+  <div class="filters">
+    <button class="active" onclick="filterCards('all', this)">All</button>
+    <button onclick="filterCards('stores', this)">Stores</button>
+    <button onclick="filterCards('commercial', this)">Commercial</button>
+    <button onclick="filterCards('rooms', this)">Rooms</button>
+  </div>
+
+  <!-- ===== REFERENCES ===== -->
+  <section class="container">
+    <div class="grid">
+
+      <!-- ===== STORES ===== -->
+      <!-- RESTAURANT/CAFE -->
+      <div class="card stores">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="card-content">
+          <h3>MON'S HOUSE</h3>
+          <h4>(Green Diamond Solar Type)</h4>
+          <span class="tag">Stores</span>
+        </div>
+      </div>
+
+      <div class="card stores">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="card-content">
+          <h3>JAMICA CAFE</h3>
+          <h4>(Cassette Type)</h4>
+          <span class="tag">Stores</span>
+        </div>
+      </div>
+
+      <div class="card stores">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="card-content">
+          <h3>ZILA SELECTED</h3>
+          <h4>(Cassette Type)</h4>
+          <span class="tag">Stores</span>
+        </div>
+      </div>
+
+      <!-- SHOP -->
+      <div class="card stores">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="card-content">
+          <h3>BLUE SHOP</h3>
+          <h4>(Floor Standing Type)</h4>
+          <span class="tag">Stores</span>
+        </div>
+      </div>
+
+      <!-- ===== COMMERCIAL ===== -->
+      <!-- OFFICE -->
+      <div class="card commercial">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="card-content">
+          <h3>AGEN OFFICE</h3>
+          <h4>(Cassette Type)</h4>
+          <span class="tag">Commercial</span>
+        </div>
+      </div>
+
+      <div class="card commercial">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="card-content">
+          <h3>B-YOND ARCHITECTURE</h3>
+          <h4>(Concealed type)</h4>
+          <span class="tag">Commercial</span>
+        </div>
+      </div>
+
+      <!-- COMPANY -->
+      <div class="card commercial">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="card-content">
+          <h3>SUPER PRODUCTION</h3>
+          <h4>(Wall type)</h4>
+          <span class="tag">Commercial</span>
+        </div>
+      </div>
+
+      <!-- SHOWROOM -->
+      <div class="card rooms">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="card-content">
+          <h3>BYD SHOWROOM: The Aley</h3>
+          <h4>(Cassette Type)</h4>
+          <span class="tag">Commercial</span>
+        </div>
+      </div>
+
+      <!-- ===== ROOMS ===== -->
+      <!-- CONDO -->
+      <div class="card rooms">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="card-content">
+          <h3>CONDO U (KASET)</h3>
+          <h4>(Oneway & Cassette)</h4>
+          <span class="tag">Rooms</span>
+        </div>
+      </div>
+
+      <!-- SCHOOL -->
+      <div class="card rooms">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="card-content">
+          <h3>ROJJIRAPA SCHOOL CONFERENCE</h3>
+          <h4>(Cassette Type)</h4>
+          <span class="tag">Rooms</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== INDUSTRIES ===== -->
+  <section class="industries">
+    <h2>Industries We Serve</h2>
+
+    <div class="industry-list">
+
+      <div class="industry">
+        <i class="ri-building-2-line icon"></i>
+        <h4>Manufacturing</h4>
+        <!-- <p>Industrial HVAC solutions for factories</p> -->
+      </div>
+
+      <div class="industry">
+        <i class="ri-building-2-line icon"></i>
+        <h4>Commercial Buildings</h4>
+        <!-- <p>Efficient climate control for offices</p> -->
+      </div>
+
+      <div class="industry">
+        <i class="ri-store-2-line icon"></i>
+        <h4>Retail & Stores</h4>
+        <!-- <p>Comfortable environments for customers</p> -->
+      </div>
+
+      <div class="industry">
+        <i class="ri-home-4-line icon"></i>
+        <h4>Residential</h4>
+        <!-- <p>Reliable cooling for modern homes</p> -->
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-inline">
+      <h3>Delivering Solutions Across Industries</h3>
+      <p>
+        With years of experience, Daisenko has supported a wide range of industries — from commercial buildings and
+        retail spaces to residential and specialized environments.
+        Looking to start your next project? Let’s bring your idea to life.
+      </p>
+      <a href="https://lin.ee/NazupTq">Contact Us</a>
+    </div>
+
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2026 Daisenko (Thailand) Co., Ltd. All Rights Reserved.
+  </footer>
+
+  <script src="/js/ref.js"></script>
+
+</body>
+
+</html>

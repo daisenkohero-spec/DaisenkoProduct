@@ -1,0 +1,238 @@
+:root {
+    --primary: #004aad;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+    max-width: 1200px;
+    margin: 50px auto 80px;
+    padding: 0 20px;
+}
+
+.contact-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+    padding: 50px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+}
+
+/* ===== INFO ===== */
+.contact-info h3 {
+    font-size: 20px;
+    color: #004aad;
+    margin-bottom: 18px;
+}
+
+.info-item {
+    margin-bottom: 16px;
+    font-size: 15px;
+    color: #4b5563;
+}
+
+.info-item strong {
+    display: block;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+/* ===== FORM ===== */
+.contact-form h3 {
+    font-size: 20px;
+    color: #004aad;
+    margin-bottom: 22px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #004aad;
+    box-shadow: 0 0 0 3px rgba(0, 74, 173, 0.15);
+}
+
+.contact-form textarea {
+    height: 130px;
+    resize: none;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    background: #004aad;
+    color: #fff;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.contact-form button:hover {
+    background: #003080;
+    transform: translateY(-1px);
+}
+
+/* ===== MAP ===== */
+.map {
+    margin-top: 60px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.map iframe {
+    width: 100%;
+    height: 420px;
+    border: 0;
+}
+
+/* ===================================================== */
+/* ================= 320px (BASE MOBILE) =============== */
+
+.contact-section {
+    margin: 30px auto 60px;
+    padding: 0 16px;
+}
+
+/* CARD */
+.contact-card {
+    padding: 24px;
+}
+
+/* GRID → 1 COLUMN */
+.contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* INFO */
+.contact-info h3,
+.contact-form h3 {
+    font-size: 18px;
+}
+
+/* FORM */
+.contact-form input,
+.contact-form textarea {
+    font-size: 14px;
+    padding: 12px 14px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+}
+
+/* MAP */
+.map {
+    margin-top: 40px;
+}
+
+.map iframe {
+    height: 260px;
+}
+
+/* ================= 360px ============================== */
+@media (min-width: 360px) {
+
+    .contact-card {
+        padding: 28px;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+}
+
+/* ================= 768px (TABLET) ===================== */
+@media (min-width: 768px) {
+
+    .contact-section {
+        margin: 50px auto 80px;
+    }
+
+    .contact-card {
+        padding: 40px;
+    }
+
+    /* ยัง 1 column แต่ spacing ดีขึ้น */
+    .contact-grid {
+        gap: 40px;
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+        font-size: 20px;
+    }
+
+    .map iframe {
+        height: 380px;
+    }
+}
+
+/* ================= 1024px (LAPTOP) ==================== */
+@media (min-width: 1024px) {
+
+    /* กลับเป็น 2 COLUMN */
+    .contact-grid {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 50px;
+    }
+
+    .contact-card {
+        padding: 50px;
+    }
+
+    /* CENTER */
+    .contact-section {
+        max-width: 1100px;
+    }
+
+    .map iframe {
+        height: 420px;
+    }
+}
+
+/* ================= 1400px (DESKTOP XL) ================ */
+@media (min-width: 1400px) {
+
+    .contact-section {
+        max-width: 1200px;
+    }
+
+    .contact-card {
+        padding: 60px;
+    }
+
+    .contact-grid {
+        gap: 60px;
+    }
+
+    .map iframe {
+        height: 480px;
+    }
+}

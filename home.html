@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DAISENKO | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="nav">
+
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/pic/20240902 Logo.png" alt="Daisenko">
+                </a>
+            </div>
+
+            <nav class="menu" id="menu" lang="th">
+                <a href="home.html" class="active">หน้าหลัก</a>
+                <a href="product.html">โปรดักส์</a>
+                <a href="about.html">เกี่ยวกับเรา</a>
+                <a href="ref.html">โปรเจกต์</a>
+                <a href="contact.html">ติดต่อเรา</a>
+            </nav>
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- <div class="menu-overlay" id="overlay"></div> -->
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="/pic/slider.jpg">
+                <div class="hero-content">
+                    <!-- <h1>Smart Living Starts Here</h1>
+                    <p>Innovative air conditioning solutions for modern lifestyles</p> -->
+                    <!-- <a href="product.html" class="hero-btn">Explore Products</a> -->
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/pic/slider1.jpg" class="contain">
+                <div class="hero-content">
+                    <!-- <h1>Energy Efficient Technology</h1>
+                    <p>Save energy with next-generation inverter systems</p>
+                    <a href="product.html" class="hero-btn">View Solutions</a> -->
+                </div>
+            </div>
+        </div>
+
+        <button class="arrow left" onclick="prevSlide()">‹</button>
+        <button class="arrow right" onclick="nextSlide()">›</button>
+    </section>
+
+    <!-- CATEGORY -->
+    <section class="category-section">
+        <div class="category-wrapper">
+            <div class="category-grid">
+                <!-- <div class="category-card" onclick="goTo('concealed')">
+                    <h3>Concealed Type</h3>
+                    <img src="/pic/conden9.png">
+                </div> -->
+                <div class="category-card" onclick="goTo('floor standing')">
+                    <h3 lang="th">แอร์ตู้ตั้ง</h3>
+                    <img src="/pic/2024-10-18-floor standing-02.png">
+                </div>
+                <div class="category-card" onclick="goTo('floor and ceiling')">
+                    <h3 lang="th">แอร์ตั้งแขวน</h3>
+                    <img src="/pic/aircon4.png">
+                </div>
+                <div class="category-card" onclick="goTo('wall')">
+                    <h3 lang="th">แอร์ติดผนัง</h3>
+                    <img src="/pic/WT_HiWall.png">
+                </div>
+                <div class="category-card" onclick="goTo('4 Ways')">
+                    <h3 lang="th">แอร์ 4 ทิศทาง</h3>
+                    <img src="/pic/CS.png">
+                </div>
+                <div class="category-card" onclick="goTo('Solar')">
+                    <h3>Solar</h3>
+                    <img src="/pic/aircon5.png">
+                </div>
+                <div class="category-card" onclick="goTo('OneWay')">
+                    <h3 lang="th">แอร์วันเวย์</h3>
+                    <img src="/pic/aircon7.png">
+                </div>
+                <div class="category-card" onclick="goTo('Concealed')">
+                    <h3 lang="th">แอร์ดัก</h3>
+                    <img src="/pic/aircon8.png">
+                </div>
+                <div class="category-card" onclick="goTo('Purifresh')">
+                    <h3 lang="th">เครื่องเติมอากาศ</h3>
+                    <img src="/pic/aircon6.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-home">
+        <div class="about-container">
+
+            <h2 lang="th">เกี่ยวกับไดเซนโกะ</h2>
+
+            <!-- VIDEO -->
+            <div class="about-video">
+                <iframe src="https://www.youtube.com/embed/qEITFXNifW8" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- TEXT -->
+            <div class="about-text" lang="th">
+                <p>
+                    "ไดเซนโกะ คือ
+                    แบรนด์เครื่องปรับอากาศที่ผสานวิศวกรรมสไตล์ญี่ปุ่นเข้ากับเทคโนโลยีการทำความเย็นที่ทันสมัย
+                    มุ่งมั่นส่งมอบโซลูชันประหยัดพลังงาน เพื่อความสะดวกสบาย สุขภาพที่ดี และความยั่งยืน
+                    สำหรับบ้านและธุรกิจทุกประเภท"
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="why-us" lang="th">
+        <h2>ทำไมต้องเลือกไดเซนโกะ</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <h3>ประหยัดพลังงาน</h3>
+                <p>ลดการใช้ไฟฟ้า ประหยัดค่าใช้จ่าย</p>
+            </div>
+            <div class="why-card">
+                <h3>เทคโนโลยี AI</h3>
+                <p>โซลูชันบ้านอัจฉริยะ</p>
+            </div>
+            <div class="why-card">
+                <h3>คุณภาพระดับพรีเมียม</h3>
+                <p>มาตรฐานระดับสากล</p>
+            </div>
+            <div class="why-card">
+                <h3>บริการหลังการขาย</h3>
+                <p>ดูแลโดยทีมช่างมืออาชีพ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Daisenko (Thailand) Co., Ltd. All Rights Reserved.
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/js/home.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+
+:root {
+    --primary: #004aad;
+    --secondary: #0072ce;
+    --bg: #f4f6f9;
+    --text: #1f2937;
+    --card: #ffffff;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+}
+
+/* ===== HERO  ===== */
+.page-hero {
+    position: relative;
+    width: 100%;
+    max-height: 520px;
+    overflow: hidden;
+}
+
+.page-hero img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* ===== FILTER ===== */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin: 60px 0 40px;
+    flex-wrap: wrap;
+}
+
+.filters button {
+    padding: 10px 22px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.filters button.active,
+.filters button:hover {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+}
+
+/* ===== REFERENCES GRID ===== */
+.grid {
+    display: grid;
+    margin: 120px;
+    padding-top: 0;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+    transition: transform .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-content {
+    padding: 26px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 14px;
+    font-size: 12px;
+    border-radius: 999px;
+    background: #eef3ff;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* ===== INDUSTRIES ===== */
+.industries {
+    background: linear-gradient(180deg, #f8fbff 0%, #eef3ff 100%);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.industries h2 {
+    font-size: 40px;
+    color: var(--primary);
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.industry-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.industry {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+/* .industry:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+} */
+
+/* ICON */
+.industry .icon {
+    font-size: 42px;
+    color: var(--primary);
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+/* TITLE */
+.industry h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+/* DESCRIPTION */
+.industry p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+/* ===== CTA ===== */
+.cta-inline {
+    margin-top: 80px;
+    padding: 30px 20px;
+    color: #000000;
+}
+
+.cta-inline h3 {
+    font-size: 32px;
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.cta-inline p {
+    font-size: 16px;
+    color: #6b7280;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ปุ่ม */
+.cta-inline a {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 14px 36px;
+    background: var(--primary);
+    color: #ffffff;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.cta-inline a:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* ===================================================== */
+/* ================= 320px (BASE MOBILE) =============== */
+
+/* HERO */
+.page-hero {
+    max-height: 260px;
+}
+
+.page-hero img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* FILTER */
+.filters {
+    margin: 30px 0 20px;
+    padding: 0 16px;
+    gap: 10px;
+}
+
+.filters button {
+    font-size: 13px;
+    padding: 8px 16px;
+}
+
+/* GRID FIX */
+.grid {
+    margin: 20px 16px 60px;
+    gap: 20px;
+}
+
+/* CARD */
+.card img {
+    height: 180px;
+}
+
+.card-content {
+    padding: 18px;
+}
+
+.card-content h3 {
+    font-size: 18px;
+}
+
+/* INDUSTRIES */
+.industries {
+    padding: 40px 16px;
+}
+
+.industries h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.industry {
+    padding: 30px 20px;
+}
+
+/* CTA */
+.cta-inline {
+    margin-top: 50px;
+}
+
+.cta-inline h3 {
+    font-size: 22px;
+}
+
+.cta-inline p {
+    font-size: 14px;
+}
+
+/* ================= 360px ============================== */
+@media (min-width: 360px) {
+
+    .page-hero {
+        max-height: 300px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .card-content h3 {
+        font-size: 19px;
+    }
+}
+
+/* ================= 768px (TABLET) ===================== */
+@media (min-width: 768px) {
+
+    .page-hero {
+        max-height: 420px;
+    }
+
+    /* FILTER */
+    .filters {
+        margin: 50px 0 30px;
+    }
+
+    .filters button {
+        font-size: 14px;
+        padding: 10px 22px;
+    }
+
+    /* GRID */
+    .grid {
+        margin: 40px 40px 80px;
+        gap: 24px;
+    }
+
+    /* CARD */
+    .card img {
+        height: 220px;
+    }
+
+    .card-content {
+        padding: 22px;
+    }
+
+    /* INDUSTRIES */
+    .industries {
+        padding: 60px 20px;
+    }
+
+    .industries h2 {
+        font-size: 32px;
+    }
+
+    /* CTA */
+    .cta-inline h3 {
+        font-size: 26px;
+    }
+
+    .cta-inline p {
+        font-size: 15px;
+    }
+}
+
+/* ================= 1024px (LAPTOP) ==================== */
+@media (min-width: 1024px) {
+
+    .page-hero {
+        max-height: 520px;
+    }
+
+    /* GRID CENTER (สำคัญ) */
+    .grid {
+        max-width: 1200px;
+        margin: 60px auto 100px;
+    }
+
+    /* CARD */
+    .card img {
+        height: 240px;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    /* INDUSTRIES */
+    .industries h2 {
+        font-size: 36px;
+    }
+
+    .cta-inline h3 {
+        font-size: 30px;
+    }
+}
+
+/* ================= 1400px (DESKTOP XL) ================ */
+@media (min-width: 1400px) {
+
+    .grid {
+        max-width: 1300px;
+        gap: 30px;
+    }
+
+    .card img {
+        height: 260px;
+    }
+
+    .industries {
+        padding: 80px 20px;
+    }
+
+    .industries h2 {
+        font-size: 40px;
+    }
+
+    .cta-inline {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
